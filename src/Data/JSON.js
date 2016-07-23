@@ -1,8 +1,6 @@
   /* global exports */
 "use strict";
 
-// module Data.JSON
-
 exports.jsonParseImpl = function jsonParseImpl(left, right, string) {
     try       { return right(JSON.parse(string)); }
     catch (e) { return left(e.toString()); }
